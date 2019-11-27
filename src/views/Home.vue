@@ -7,6 +7,9 @@
       <div class="item">
         <router-link to='/colorpicker'>图片转base64</router-link>
       </div>
+      <div class="item">
+        <router-link to='/qrcode'>生成二维码</router-link>
+      </div>
     </div>
     <router-view/>
   </div>

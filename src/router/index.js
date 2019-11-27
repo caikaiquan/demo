@@ -17,6 +17,10 @@ const routes = [
       {
         path: 'colorpicker',
         component: () => import('@/views/ColorPicker.vue')
+      },
+      {
+        path: 'qrcode',
+        component: () => import('@/views/QRCode.vue')
       }
     ]
   },

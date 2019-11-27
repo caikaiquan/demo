@@ -55,12 +55,14 @@ export default {
         if (this.lastTime == null && this.lastCode == null) {
           // 初始化赋值
           this.keycode = String.fromCharCode(nowcode);
+          console.log('nowcode',nowcode,'this.keycode',String.fromCharCode(nowcode))
         } else if (
           this.lastCode != null &&
           this.lastTime != null &&
           nowTime - this.lastTime <= 30
         ) {
           this.keycode += String.fromCharCode(nowcode);
+          console.log('nowcode',nowcode,'this.keycode',String.fromCharCode(nowcode))
         } else {
           this.keycode = "";
           this.lastCode = null;
